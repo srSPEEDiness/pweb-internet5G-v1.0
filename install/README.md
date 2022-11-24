@@ -1,0 +1,6 @@
+# PAINEL-1.0-@srSPEEDiness
+PAINEL WEB INTERNET 5G
+
+
+
+
