@@ -25,7 +25,7 @@ Só joga na máquina e deixar instalar
 [![Join WhatsApp Chat](https://img.shields.io/badge/Join-WhatsApp%20Group-bl.svg?logo=WhatsApp)](https://wa.me/5521976102205)
 
 
-# PAINEL WEB INTERNET 5G
+# 🚀 COMANDO DE INSTALAÇÃO
 
 PAINEL DE CRÉDITO MOD MIRACLE
 
@@ -33,7 +33,7 @@ PAINEL DE CRÉDITO MOD MIRACLE
 apt-get update -y; apt-get upgrade -y; wget install.speedcell.ga/Pro-pweb; chmod 777 Pro-pweb; ./Pro-pweb
 ```
 
-# SINCRONIZADOR SSH</br> 
+# 🔄 SINCRONIZADOR SSH 
 <h3><b>⚠(Executar na VPS do Painel SSH)⚠</b></h3>
 
 ```
