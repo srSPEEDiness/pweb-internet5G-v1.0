@@ -415,7 +415,7 @@ dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
 clear
 echo -e "\E[44;1;37m    INSTALANDO PAINEL    \E[0m"
 echo ""
-echo -e "PWEB SPEED PRO" | figlet | boxes -d stone -p a0v0 | lolcat
+echo -e "PAINEL WEB SPEED PRO" | figlet | boxes -d stone -p a0v0 | lolcat
 echo -e "                              \033[1;31mBy @srSPEEDiness\033[1;36m" | lolcat
 echo ""
 chave=$(curl -sSL "https://github.com/srSPEEDiness/pweb-internet5G-v1.0/raw/main/install/chave") &>/dev/null
@@ -458,7 +458,7 @@ install_continue2
 	sed -i "s/#PasswordAuthentication no/PasswordAuthentication yes/g" /etc/ssh/sshd_config
 } > /dev/null
 echo ""
-echo -e "WEB SWIT 4G" | figlet | boxes -d stone -p a0v0 | lolcat
+echo -e "PAINEL WEB SPEED PRO" | figlet | boxes -d stone -p a0v0 | lolcat
 echo -e "                              \033[1;31mBy @srSPEEDiness\033[1;36m" | lolcat
 echo ""
 echo -e "\033[1;36mDEFINA UMA NOVA SENHA PARA\033[0m" | lolcat
@@ -480,7 +480,7 @@ tst_bkp
 clear
 sed -i "s;upload_max_filesize = 2M;upload_max_filesize = 256M;g" /etc/php/8.1/apache2/php.ini > /dev/null 2>&1
 sed -i "s;post_max_size = 8M;post_max_size = 256M;g" /etc/php/8.1/apache2/php.ini > /dev/null 2>&1
-echo -e "PWEB SPEED PRO" | figlet | boxes -d stone -p a0v0 | lolcat
+echo -e "PAINEL WEB SPEED PRO" | figlet | boxes -d stone -p a0v0 | lolcat
 echo -e "                              \033[1;31mBy @srSPEEDiness\033[1;36m" | lolcat
 echo ""
 echo -e "\033[1;32mPAINEL INSTALADO COM SUCESSO!" | lolcat

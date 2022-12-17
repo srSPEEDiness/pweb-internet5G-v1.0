@@ -40,7 +40,7 @@ echo ""
 echo ""
 echo -e "\033[1;36m NOME ATUAL:\033[1;37m $whatsappatual\033[0m"
 echo ""
-echo -ne "\033[1;32m INFORME O NUMERO DO WHATSAPP (Ex: 21970240456)\033[1;37m: "; read -r whatsapp
+echo -ne "\033[1;32m INFORME O NUMERO DO WHATSAPP (Ex: 21976102205)\033[1;37m: "; read -r whatsapp
 echo ""
 echo -e "   \033[1;32mOK\033[1;37m"
 echo ""
