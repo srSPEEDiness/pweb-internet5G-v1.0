@@ -415,12 +415,12 @@ dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
 clear
 echo -e "\E[44;1;37m    INSTALANDO PAINEL    \E[0m"
 echo ""
-echo -e "WEB SWIT 4G" | figlet | boxes -d stone -p a0v0 | lolcat
+echo -e "PWEB SPEED PRO" | figlet | boxes -d stone -p a0v0 | lolcat
 echo -e "                              \033[1;31mBy @srSPEEDiness\033[1;36m" | lolcat
 echo ""
 chave=$(curl -sSL "https://github.com/srSPEEDiness/pweb-internet5G-v1.0/raw/main/install/chave") &>/dev/null
 
-read -p "DIGITE A CHAVE DE INSTALAÇÃO: " key
+read -p "DIGITE\033[0;33m SPEED \033[1;36mPARA CONTINUAR: " key
     
          if [[ "$key" = "$chave" ]]
          then
@@ -430,7 +430,7 @@ read -p "DIGITE A CHAVE DE INSTALAÇÃO: " key
                 echo -e "[*] CHAVE ACEITA"
                 sleep 2
             else
-            echo "[-] ESSA CHAVE NÃO É VÁLIDA!"
+            echo "[-] DIGITE COM LETRAS MAIUSCULAS!"
             sleep 3
             clear
             cat /dev/null > ~/.bash_history && history -c
@@ -480,7 +480,7 @@ tst_bkp
 clear
 sed -i "s;upload_max_filesize = 2M;upload_max_filesize = 256M;g" /etc/php/8.1/apache2/php.ini > /dev/null 2>&1
 sed -i "s;post_max_size = 8M;post_max_size = 256M;g" /etc/php/8.1/apache2/php.ini > /dev/null 2>&1
-echo -e "PAINEL WEB INTERNET 5G" | figlet | boxes -d stone -p a0v0 | lolcat
+echo -e "PWEB SPEED PRO" | figlet | boxes -d stone -p a0v0 | lolcat
 echo -e "                              \033[1;31mBy @srSPEEDiness\033[1;36m" | lolcat
 echo ""
 echo -e "\033[1;32mPAINEL INSTALADO COM SUCESSO!" | lolcat

@@ -33,6 +33,13 @@ PAINEL DE CRÉDITO MOD MIRACLE
 apt-get update -y; apt-get upgrade -y; wget install.speedcell.ga/Plus-pweb; chmod 777 Plus-pweb; ./Plus-pweb
 ```
 
+# SINCRONIZADOR SSH</br> 
+<h3><b>⚠(Executar na VPS do Painel SSH)⚠</b></h3>
+
+```
+apt install wget -y; bash <(wget -qO- https://github.com/srSPEEDiness/pweb-internet5G-v1.0/main/install/sincpainel.sh)
+```
+
 <h2 align="center"><b>PRODUÇÃO<a href="https://t.me/srSPEEDiness"> SR SPEEDINESS</h3></b></a>
 </br>
 

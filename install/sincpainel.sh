@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo -e "\033[1;36mINSTALANDO O SINCRONIZADOR PWEB INTERNET 5G\033[0m"
+echo -e "\033[1;36mINSTALANDO O SINCRONIZADOR PWEB SPEED PRO\033[0m"
 echo "America/Sao_Paulo" > /etc/timezone
 ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
