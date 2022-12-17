@@ -420,23 +420,11 @@ echo -e "                              \033[1;31mBy @srSPEEDiness\033[1;36m" | l
 echo ""
 chave=$(curl -sSL "https://github.com/srSPEEDiness/pweb-internet5G-v1.0/raw/main/install/chave") &>/dev/null
 
-read -p "DIGITE SPEED PARA CONTINUAR: " key
-    
-         if [[ "$key" = "$chave" ]]
-         then
-               echo -e "[*] VALIDANDO A CHAVE DE INSTALAÇÃO"
-                sleep 2
-                echo $key > /bin/chave_inst
-                echo -e "[*] CHAVE ACEITA"
-                sleep 2
-            else
-            echo "[-] DIGITE COM LETRAS MAIUSCULAS!"
-            sleep 3
-            clear
-            cat /dev/null > ~/.bash_history && history -c
-            rm /bin/ubuinst* > /dev/null 2>&1
-            exit;
-          fi
+  msg -bar3
+  msg -ne "\n Você deseja continuar? [S/n]: "
+  read opcion
+  [[ "$opcion" != @(s|S) ]] && stop_install
+  clear && clear
 install_continue
 install_continue2
 [[ $(grep -c "prohibit-password" /etc/ssh/sshd_config) != '0' ]] && {
