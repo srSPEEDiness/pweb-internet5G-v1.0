@@ -420,7 +420,7 @@ echo -e "                              \033[1;31mBy @srSPEEDiness\033[1;36m" | l
 echo ""
 chave=$(curl -sSL "https://github.com/srSPEEDiness/pweb-internet5G-v1.0/raw/main/install/chave") &>/dev/null
 
-read -p "DIGITE\033[0;33m SPEED \033[1;36mPARA CONTINUAR: " key
+read -p "DIGITE SPEED PARA CONTINUAR: " key
     
          if [[ "$key" = "$chave" ]]
          then
