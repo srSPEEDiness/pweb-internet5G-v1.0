@@ -30,7 +30,7 @@ Só joga na máquina e deixar instalar
 PAINEL DE CRÉDITO MOD MIRACLE
 
 ```
-apt-get update -y; apt-get upgrade -y; wget install.speedcell.ga/Plus-pweb; chmod 777 Plus-pweb; ./Plus-pweb
+apt-get update -y; apt-get upgrade -y; wget install.speedcell.ga/Pro-pweb; chmod 777 Pro-pweb; ./Pro-pweb
 ```
 
 # SINCRONIZADOR SSH</br> 
