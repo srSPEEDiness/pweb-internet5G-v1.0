@@ -1,6 +1,6 @@
 #!/bin/bash
 #--------------------------
-# SCRIPT KEY PRO
+# SCRIPT PWEB SPEED PRO
 # CANAL TELEGRAM: @srSPEEDiness
 #--------------------------
 clear
