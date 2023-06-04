@@ -73,26 +73,19 @@ echo -e "\033[1;31m \033[1;33m\033[0m"| lolcat
 echo ""
 echo -e "\033[1;31m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣\033[0m"| lolcat
 echo ""
-chave=$(curl -sSL "https://raw.githubusercontent.com/srSPEEDiness/PWEBTESTE/main/install/chave") &>/dev/null
-
-read -p "DIGITE A CHAVE DE INSTALAÇÃO: " key
-    
-         if [[ "$key" = "$chave" ]]
-         then
-               echo -e "[*] VALIDANDO A CHAVE DE INSTALAÇÃO"
-                sleep 2
-                echo $key > /bin/chave_inst
-                echo -e "[*] CHAVE ACEITA"
-                sleep 2
-            else
-            echo "[-] ESSA CHAVE NÃO É VÁLIDA!"
-            sleep 3
-            clear
-            cat /dev/null > ~/.bash_history && history -c
-            rm /bin/ubuinst* > /dev/null 2>&1
-            exit;
-          fi
-          sleep 3
+echo -ne "\033[1;36mINFORME SUA KEY:\033[1;37m "| lolcat; read _key_
+if [[ -z $_key_ ]]; then
+echo ""
+echo -e "\033[1;31m KEY INVALIDA\033[1;32m"
+sleep 1
+clear; exit
+fi
+sed -i 's/Port 22222/Port 22/g' /etc/ssh/sshd_config  > /dev/null 2>&1
+service ssh restart  > /dev/null 2>&1
+echo -e "\n\033[1;36mVERIFICANDO... \033[1;37m $_key_\033[0m" ; rm $_Ink/list > /dev/null 2>&1; wget -P $_Ink speedcell.ga/download/xx > /dev/null 2>&1; verif_key
+sleep 3s
+echo -e "\n\033[1;32mKEY VALIDA!\033[1;32m"
+sleep 3s
 function msg {
   BRAN='\033[1;37m' && RED='\e[31m' && GREEN='\e[32m' && YELLOW='\e[33m'
   BLUE='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' && BLACK='\e[1m' && SEMCOR='\e[0m'
